@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>秀麗團隊</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- ~~~~~ Favicon ~~~~~ -->
+    <link rel="shortcut icon" href="./images/shield-star-line-icon.png" type="image/x-icon">
+    <!-- ~~~~~ Font Awesome ~~~~~ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ~~~~~ Remix Icon ~~~~~ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- ~~~~~~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~~~~~~ -->
+    <header id="navbar" class="sticky top-0 z-50 duration-300" >
+        <nav class="border relative container flex justify-between items-center">
+            <div class="py-5">
+
+                <!-- <a class="border w-24" href="#"><i class="ri-shield-star-line border w-24"></i></a> -->
+                <a href="#"><img id="logo" class="w-10 md:w-14" src="./images/shield-star-line-logo.png" alt="logo"></a>
+                <!-- <img id="white-logo" class="hidden w-10 md:w-14 border border-green-500" src="./images/shield-star-line-white.png" alt="white-logo"> -->
+            </div>
+
+            <div id="nav-menu" class="hidden absolute top-0 left-0 bg-primaryColor w-full py-24 lg:block lg:bg-transparent lg:static lg:py-0 lg:border-none lg:w-auto lg:ml-auto">
+                <ul class="flex flex-col items-center text-center gap-8 lg:flex-row lg:gap-5">
+                    <li><a class="nav_link" href="#quality_services">業務服務</a></li>
+                    <!-- <li><a class="nav_link" href="#recent_works">Works</a></li> -->
+                    <li><a class="nav_link" href="#co-ops">合作保全</a></li>
+                    <li><a class="nav_link" href="#exp">學經歷</a></li>
+                    <!-- <li><a class="nav_link" href="#skills">Skills</a></li> -->
+                    <!-- <li><a class="nav_link" href="#blogs">Blogs</a></li> -->
+                    <li><a class="nav_link" href="#contact">聯絡資訊</a></li>
+                    <!-- <li>
+                        <button class="btn ml-10">
+                            <span class="z-10">Hire Me!</span>
+                        </button>
+                    </li> -->
+                </ul>
+    
+                <div id="nav-close" class="absolute top-6 right-3 md:right-8 text-whiteColor text-3xl cursor-pointer lg:hidden"><i class="ri-close-line"></i></div>
+            </div>
+
+            <div class="flex items-center gap-5">
+                <button class="btn ml-10">
+                    <span class="z-10"><i class="fa-solid fa-qrcode"></i>&nbsp;QR Code</span>
+                </button>
+
+                <i id="theme-toggle" class="ri-moon-line text-2xl ml-4 cursor-pointer"></i>
+                
+                <div id="hamburger" class="lg:hidden"><i class="ri-menu-2-line text-2xl cursor-pointer"></i></div>
+            </div>
+        </nav>
+    </header>
+    <!-- ~~~~~~~~~~~~~~~~~~~~ End Header ~~~~~~~~~~~~~~~~~~~~ -->
+
+    <main>
+        <!-- ~~~~~~~~~~~~~~~~~~~~ Hero Section ~~~~~~~~~~~~~~~~~~~~ -->
+        <section id="hero" class="relative py-5">
+            <!-- blob -->
+            <div class="absolute right-0 top-[-20%] w-80 h-80 bg-primaryColorLight mix-blend-screen rounded-full blur-[150px] opacity-50"></div>
+            
+            <div class="border container">
+                <!-- bg image -->
+                <div class="hidden md:block absolute top-0 left-[35%] animate-scaleAnimation">
+                    <p class="font-Londrina text-[400px] lg:text-[450px] text-primaryColorLight uppercase -z-10 opacity-5">嗨</p>
+                </div>
+
+                <!-- hero content -->
+                <div class="flex items-center gap-5">
+                    <div class="hero__content space-y-2 mb-10 md:mb-0 md:w-1/2">
+                        <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold">我是&#x275D秀麗&#x275E</h3>
+                        <h1>
+                            <span class="title">我們期待你加入</span>
+                            <br>
+                            <span class="text-4xl lg:text-6xl xl:text-[65px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-amber-800 dark:to-amber-100 inline-block pb-2">秀麗保全團隊</span>
+                        </h1>
+                        <p class="max-w-xl text-xl pb-5">保全人員對於人員、場所和事物的整體安全非常重要。我們的存在可以對潛在的犯罪分子起到威懾作用、並且能夠處理各種緊急應變事故。這更加強對人員、場所和事務的安全保護。</p>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-b from-primaryColor to-primaryColorLight grid text-whiteColor place-items-center lg:h-14 lg:w-14"><i class="fa-solid fa-phone"></i></div>
+                            <div class="space-y-1">
+                                <p class="text-base">聯絡電話</p>
+                                <p class="font-bold text-lg hover:text-primaryColorLight duration-300 cursor-pointer">+01 123 156 8096</p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="flex items-center flex-wrap gap-5">
+                            <button class="btn_outline">Download CV <i class="fa-solid fa-download"></i></button>
+
+                            <div class="flex items-center gap-5">
+                                <div class="social_icon">
+                                    <i class="fa-brands fa-twitter z-10"></i>
+                                </div>
+                                <div class="social_icon">
+                                    <i class="fa-brands fa-linkedin-in z-10"></i>
+                                </div>
+                                <div class="social_icon">
+                                    <i class="fa-brands fa-youtube z-10"></i>
+                                </div>
+                                <div class="social_icon">
+                                    <i class="fa-brands fa-github z-10"></i>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <!-- hero image -->
+                    <div class="hero__image relative hidden md:w-1/2 md:flex justify-center">
+                        <!-- blob -->
+                        <div class="absolute left-0 bottom-0 w-80 h-80 bg-primaryColorLight mix-blend-screen rounded-full blur-[150px] opacity-50"></div>
+
+                        <img class="my-10 md:w-full lg:max-w-[60%] duration-300 origin-center rotate-[4.5deg] border-2 border-primaryColor rounded-[38px] hover:rotate-0 hover:border-primaryColorLight" src="./images/security_guard.png" alt="person">
+                    </div>
+                </div>
+
+                <!-- hero image for small phone -->
+                <div class="bg-sectionColor dark:bg-darkSectionColor mb-6 md:hidden">
+                    <div class="container grid place-items-center">
+                        <div class="bg-no-repeat bg-top p-5">
+                            <img class="rounded-full" src="./images/security_guard_head.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </section>
+        <!-- ~~~~~~~~~~~~~~~~~~~~ End Hero Section ~~~~~~~~~~~~~~~~~~~~ -->
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~ My Quality Services ~~~~~~~~~~~~~~~~~~~~ -->
+        <section id="quality_services" class="bg-sectionColor dark:bg-darkSectionColor scroll-mt-20">
+            <div class="border container">
+                <div class="service__top flex flex-col items-center text-center gap-5">
+                    <h2 class="subtitle">業務服務項目</h2>
+                    
+                    <p class="max-w-2xl text-lg lg:text-xl">我們團隊皆有專人職前教育訓練SOP帶領實習</p>
+                </div>
+    
+                <!-- list section -->
+                <div class="my-6 lg:my-8">
+                    <!-- item-1 -->
+                    <div class="service_item">
+                        <div class="font-bold text-xl flex items-center gap-3 md:text-2xl lg:text-3xl md:w-[40%]">
+                            <p class="text-primaryColorLight ">01</p>
+                            <p>駐衛保全</p>
+                        </div>
+                        <div class="ml-auto text-xl origin-center rotate-45 md:order-last">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                        <div class="md:max-w-[330px] lg:max-w-md xl:max-w-lg">
+                            <ul>
+                                <li>門禁管制，訪客登記通報及指引，維護安全</li>
+                                <li>管制中心監控系統，監看出入口或車輛進出狀況</li>
+                                <li>安全巡檢勤務</li>
+                                <li>災變事故處理</li>
+                                <li>停車場管理與交通指揮</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    
+
+                    <!-- item-2 -->
+                    <div class="service_item">
+                        <div class="font-bold text-xl flex items-center gap-3 md:text-2xl lg:text-3xl md:w-[40%]">
+                            <p class="text-primaryColorLight ">02</p>
+                            <p>廠內安檢</p>
+                        </div>
+                        <div class="ml-auto text-2xl origin-center rotate-45 md:order-last">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                        <div class="md:max-w-[330px] lg:max-w-md xl:max-w-lg">
+                            <ul>
+                                <li>定點檢查進出人員之物品避免有禁制品出入廠區</li>
+                                <li>工作內容1-2天上手更不須搬重物</li>
+                                <li>管制品進出登記</li>
+                                <li>承攬商施工相關事項確認</li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+
+                    <!-- item-3 -->
+                    <div class="service_item">
+                        <div class="font-bold text-xl flex items-center gap-3 md:text-2xl lg:text-3xl md:w-[40%]">
+                            <p class="text-primaryColorLight ">03</p>
+                            <p>碼頭哨安管</p>
+                        </div>
+                        <div class="ml-auto text-2xl origin-center rotate-45 md:order-last">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                        <div class="md:max-w-[330px] lg:max-w-md xl:max-w-lg">
+                            <ul>
+                                <li>指揮車輛出入停放，維持場地交通安全順暢</li>
+                                <li>遵循安全程序處理竊盜案件，防範非法入侵行為</li>
+                                <li>支援緊急事件應變處置，保障人員與設備安全</li>
+                                <li>提供客戶友善服務，解答訪客疑問並維護良好形象</li>
+                            </ul>
+                            <!-- <p>I dissect complex user experience challenges to devise solutions that prioritize integrity.</p> -->
+                        </div>
+                    </div>
+
+                    <!-- item-4 -->
+                    <div class="service_item">
+                        <div class="font-bold text-xl flex items-center gap-4 md:text-2xl lg:text-3xl md:w-[40%]">
+                            <p class="text-primaryColorLight ">04</p>
+                            <p>行政保全</p>
+                        </div>
+                        <div class="ml-auto text-2xl origin-center rotate-45 md:order-last">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                        <div class="md:max-w-[330px] lg:max-w-md xl:max-w-lg">
+                            <ul>
+                                <li>辦理公司內之設備維護包含水電以及辦公用品修護</li>
+                                <li>辦公室營繕工程規劃包含辦公環境美化、裝潢</li>
+                                <li>提供公司人員電信郵務之服務</li>
+                                <li>提供公司人員交通、文具伙食供應</li>
+                            </ul>
+                            <!-- <p>I dissect complex user experience challenges to devise solutions that prioritize integrity.</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ~~~~~~~~~~~~~~~~~~~~ End My Quality Services ~~~~~~~~~~~~~~~~~~~~ -->
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~ My Recent Works ~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- <section id="recent_works" class="bg-sectionColor">
+            <div class="container">
+                <div class="flex flex-col items-center text-center gap-5">
+                    <h2 class="subtitle">My Recent Works</h2>
+                    <p class="max-w-2xl">We transform your ideas and desires into a distinctive web project that inspires both you and your customers</p>
+                </div>
+
+                <div>
+                    
+                    <button>All</button>
+                    <button>UX/UI</button>
+                    <button>Branding</button>
+                    <button>Apps</button>
+                </div>
+            </div>
+        </section> -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~ End My Recent Works ~~~~~~~~~~~~~~~~~~~~ -->
+
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~ Experience & Education ~~~~~~~~~~~~~~~~~~~~ -->
+        <section id="exp_edu" class="bg-sectionColor dark:bg-darkSectionColor">
+            <div class="border container w-full grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- experience -->
+                <div id="co-ops" class="scroll-mt-32">
+                    <div class="exp__top flex items-center justify-center gap-3">
+                        <div class="text-2xl text-primaryColorLight  md:text-3xl lg:text-4xl"><i class="fa-solid fa-medal"></i></div>
+                        <h2 class="subtitle">合作保全</h2>
+                    </div>
+
+                    <div class="my-10 space-y-5 md:space-y-10">
+                        <!-- card-1 -->
+                        <div class="exp__card exp_edu_card flex flex-col items-center bg-whiteColor dark:bg-darkBodyColor p-5 rounded-2xl hover:bg-primaryColorLight dark:hover:bg-primaryColorLight duration-300">
+                            <p class="text-sm font-bold text-primaryColorLight pb-3">2022-現在</p>
+                            <p class="text-2xl font-bold uppercase lg:text-3xl xl:text-4xl">翔龍保全</p>
+                            <p>新竹, 桃園</p>
+                        </div>
+
+                        <!-- card-2 -->
+                        <div class="exp__card exp_edu_card flex flex-col items-center bg-whiteColor dark:bg-darkBodyColor p-5 rounded-2xl hover:bg-primaryColorLight dark:hover:bg-primaryColorLight duration-300">
+                            <p class="text-sm font-bold text-primaryColorLight pb-3">2022-現在</p>
+                            <p class="text-2xl font-bold uppercase lg:text-3xl xl:text-4xl">弘毅保全</p>
+                            <p>新竹</p>
+                        </div>
+
+                        <!-- card-3 -->
+                        <div class="exp__card exp_edu_card flex flex-col items-center bg-whiteColor dark:bg-darkBodyColor p-5 rounded-2xl hover:bg-primaryColorLight dark:hover:bg-primaryColorLight duration-300">
+                            <p class="text-sm font-bold text-primaryColorLight pb-3">2022-現在</p>
+                            <p class="text-2xl font-bold uppercase lg:text-3xl xl:text-4xl">某某保全</p>
+                            <p>地點, 地點</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- education -->
+                <div id="exp" class="scroll-mt-32">
+                    <div class="edu__top flex items-center justify-center gap-3">
+                        <div class="text-2xl text-primaryColorLight  md:text-3xl lg:text-4xl"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h2 class="subtitle">學經歷</h2>
+                    </div>
+
+                    <div class="my-10 space-y-5 md:space-y-10">
+                        <!-- card-1 -->
+                        <div class="edu__card exp_edu_card flex flex-col items-center bg-whiteColor dark:bg-darkBodyColor p-5 rounded-2xl hover:bg-primaryColorLight dark:hover:bg-primaryColorLight duration-300">
+                        <p class="text-sm font-bold text-primaryColorLight pb-3">2022-Present</p>
+                        <p class="text-xl font-bold uppercase lg:text-2xl xl:text-3xl">Lead Developer</p>
+                        <p>Blockdots, London</p>
+                        </div>
+
+                        <!-- card-2 -->
+                        <div class="edu__card exp_edu_card flex flex-col items-center bg-whiteColor dark:bg-darkBodyColor p-5 rounded-2xl hover:bg-primaryColorLight dark:hover:bg-primaryColorLight duration-300">
+                        <p class="text-sm font-bold text-primaryColorLight pb-3">2022-Present</p>
+                        <p class="text-xl font-bold uppercase lg:text-2xl xl:text-3xl">Lead Developer</p>
+                        <p>Blockdots, London</p>
+                        </div>
+                        
+                        <!-- card-3 -->
+                        <div class="edu__card exp_edu_card flex flex-col items-center bg-whiteColor dark:bg-darkBodyColor p-5 rounded-2xl hover:bg-primaryColorLight dark:hover:bg-primaryColorLight duration-300">
+                        <p class="text-sm font-bold text-primaryColorLight pb-3">2022-Present</p>
+                        <p class="text-xl font-bold uppercase lg:text-2xl xl:text-3xl">Lead Developer</p>
+                        <p>Blockdots, London</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- ~~~~~~~~~~~~~~~~~~~~ End My Recent Works ~~~~~~~~~~~~~~~~~~~~ -->
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~ Contact ~~~~~~~~~~~~~~~~~~~~ -->
+        <section id="contact" class="container">
+                <!-- content -->
+                <div class="flex flex-col justify-around gap-6 lg:flex-row">
+                    <div class="contact__item flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-b from-primaryColor to-primaryColorLight grid text-whiteColor place-items-center lg:h-14 lg:w-14"><i class="fa-solid fa-phone"></i></div>
+                        <div class="space-y-1">
+                            <p class="text-base">電話</p>
+                            <p class="font-bold text-lg hover:text-primaryColorLight duration-300 cursor-pointer">+01 123 156 8096</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__item flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-b from-primaryColor to-primaryColorLight grid text-whiteColor place-items-center lg:h-14 lg:w-14"><i class="fa-regular fa-envelope"></i></div>
+                        <div class="space-y-1">
+                            <p class="text-base">Email</p>
+                            <p class="font-bold text-lg hover:text-primaryColorLight duration-300 cursor-pointer">lightcode@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__item flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-b from-primaryColor to-primaryColorLight grid text-whiteColor place-items-center lg:h-14 lg:w-14"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="space-y-1">
+                            <p class="text-base">工作地點</p>
+                            <p class="font-bold text-lg hover:text-primaryColorLight duration-300 cursor-pointer">新竹縣湖口鄉湖口工業區</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- contact form -->
+                 <!-- 
+                <form class="border contact__form flex-1 bg-sectionColor dark:bg-darkSectionColor border-primaryColor px-5 py-10 rounded-3xl space-y-3 " action="">
+                    ++ subtitle & description ++
+                    <div class="flex flex-col">
+                        <h2 class="subtitle">Let's work together</h2>
+                        <p class="max-w-2xl py-3">I create elegantly simple designs and code with passion. It's as straightforward as that!</p>
+                    </div>
+
+                    <div class="flex flex-col items-center gap-3 md:flex-row">
+                        <input type="text" placeholder="First name" name="firstname" autocomplete="off">
+                        <input type="text" placeholder="Last name" name="lastname" autocomplete="off">
+                    </div>
+
+                    <div class="flex flex-col items-center gap-3 md:flex-row">
+                        <input type="email" placeholder="Email Address" name="email" autocomplete="off">
+                        <input type="phone" placeholder="Phone number" name="phone" autocomplete="off">
+                    </div>
+
+                    <select name="" id="">
+                        <option selected>Choose a service</option>
+                        <option value="Branding">Branding Design</option>
+                        <option value="Web">Web Design</option>
+                        <option value="UIUX">UI/UX Design</option>
+                        <option value="App">App Design</option>
+                    </select>
+
+                    <div class="space-y-3">
+                        <textarea name="message" rows="5" placeholder="Message"></textarea>
+                        <button class="btn"><span class="z-10">send message</span></button>
+                    </div>
+                </form>
+                    -->
+        </section>
+       <!-- ~~~~~~~~~~~~~~~~~~~~ End Contact ~~~~~~~~~~~~~~~~~~~~ -->
+    </main>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~~~~~~ -->
+    <footer id="footer" class="bg-sectionColor dark:bg-darkSectionColor py-10">
+        <div class="container flex flex-col items-center gap-5">
+            <div class="flex justify-center items-center gap-2">
+                <img class="w-10 lg:w-14" src="./images/shield-star-line-logo.png" alt="">
+                <p class="text-3xl md:text-4xl lg:text-5xl   text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-amber-800 dark:to-amber-100">秀麗保全團隊</p>
+            </div>
+
+            <div>
+                <ul class="flex justify-center items-center space-x-3">
+                    <li><a class="nav_link text-primaryColor" href="#quality_services">業務服務</a></li>
+                    <!-- <li><a class="nav_link text-primaryColor" href="#recent_works">Works</a></li> -->
+                    <li><a class="nav_link text-primaryColor" href="#co-ops">合作保全</a></li>
+                    <li><a class="nav_link text-primaryColor" href="#exp">學經歷</a></li>
+                    <!-- <li><a class="nav_link text-primaryColor" href="#skills">Skills</a></li> -->
+                    <!-- <li><a class="nav_link text-primaryColor" href="#blogs">Blogs</a></li> -->
+                    <li><a class="nav_link text-primaryColor" href="#contact">聯絡資訊</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="text-primaryColorLight">
+                <p>&copy; 2025 All rights reserved by <span class="font-bold">LightCode</span></p>
+            </div>
+        </div>
+    </footer>
+    <!-- ~~~~~~~~~~~~~~~~~~~~ End Footer ~~~~~~~~~~~~~~~~~~~~ -->
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~ Scroll Up ~~~~~~~~~~~~~~~~~~~~ -->
+    <a id="scroll-up" class="fixed right-10 -bottom-1/2 z-50 py-2 px-4 bg-primaryColor text-whiteColor text-lg rounded-full hover:-translate-y-1 ease-in duration-200" href="#"><i class="fa-solid fa-arrow-up"></i></a>
+    <!-- ~~~~~~~~~~~~~~~~~~~~ End Scroll Up ~~~~~~~~~~~~~~~~~~~~ -->
+
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~ Scroll Reveal ~~~~~~~~~~~~~~~~~~~~ -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~ Main.JS ~~~~~~~~~~~~~~~~~~~~ -->
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
